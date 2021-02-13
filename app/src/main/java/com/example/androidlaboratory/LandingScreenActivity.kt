@@ -2,13 +2,14 @@ package com.example.androidlaboratory
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.androidlaboratory.databinding.ActivitySplashScreenBinding
+import com.example.androidlaboratory.databinding.ActivityLandingScreenBinding
 
-class SplashScreenActivity : AppCompatActivity() {
+class LandingScreenActivity : AppCompatActivity() {
 
-    private val binding: ActivitySplashScreenBinding by lazy {
-        ActivitySplashScreenBinding.inflate(layoutInflater)
+    private val binding: ActivityLandingScreenBinding by lazy {
+        ActivityLandingScreenBinding.inflate(layoutInflater)
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
