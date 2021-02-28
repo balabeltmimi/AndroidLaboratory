@@ -20,6 +20,4 @@ class SplashScreenActivity : CoroutineScope, AppCompatActivity() {
         launch {
             delay(3000)
         }
-
-    }
 }
