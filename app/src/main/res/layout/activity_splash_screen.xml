@@ -17,5 +17,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/PXL_20210302_113627260" />
+        app:srcCompat="@mipmap/splashpicture" />
 </androidx.constraintlayout.widget.ConstraintLayout>

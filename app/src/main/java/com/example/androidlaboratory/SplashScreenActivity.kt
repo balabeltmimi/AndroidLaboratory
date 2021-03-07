@@ -6,10 +6,11 @@ import com.example.androidlaboratory.databinding.ActivitySplashScreenBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import kotlin.coroutines.CoroutineContext
 
-class SplashScreenActivity : CoroutineScope, AppCompatActivity() {
+class SplashScreenActivity(override val coroutineContext: CoroutineContext) : AppCompatActivity(), CoroutineScope {
 
-    val binding: ActivitySplashScreenBinding by lazy {
+    private val binding: ActivitySplashScreenBinding by lazy {
         ActivitySplashScreenBinding.inflate(layoutInflater)
     }
 
@@ -18,6 +19,7 @@ class SplashScreenActivity : CoroutineScope, AppCompatActivity() {
         setContentView(binding.root)
 
         launch {
-            delay(3000)
+            delay( 3000)
         }
+    }
 }
